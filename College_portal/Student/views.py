@@ -62,5 +62,5 @@ def dashboard(request):
 def user_logout(request):
     if request.method=='POST':
         logout(request)
-        return HttpResponse("You have logged out Successfully!")
+        return render(request,'logout.html')
     return HttpResponse("Invalid request")

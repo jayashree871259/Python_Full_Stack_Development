@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Successful</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .logout-container {
+            background: white;
+            width: 90%;
+            max-width: 420px;
+            padding: 45px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: #e6f9ed;
+            color: #28a745;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+            margin: 0 auto 25px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #777;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .login-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 13px 35px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            margin-top: 25px;
+            color: #aaa;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="logout-container">
+
+        <div class="success-icon">
+            &#10003;
+        </div>
+
+        <h1>Logged Out Successfully!</h1>
+
+        <p>
+            You have successfully logged out of your account.
+            Thank you for visiting us. We hope to see you again soon!
+        </p>
+
+        <a href="{% url 'login' %}" class="login-btn">
+            Login Again
+        </a>
+
+        <div class="footer">
+            Thank you for using our website!
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -73,7 +73,7 @@
 <body>
 
     <div class="container">
-        <h1>Welcome, <span>{{ request.user.username }}</span>!</h1>
+        <h1>Welcome <span>{{ request.user.username }}</span>!</h1>
 
         <form action="{% url 'logout' %}" method="POST">
             {% csrf_token %}
